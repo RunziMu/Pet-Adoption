@@ -19,6 +19,12 @@
             body {
                 text-align: center;
             }
+            form {
+                display: inline-block;
+                border: solid 1px grey;
+                padding: 10px;
+                border-radius: 10px;
+            }
         </style>
     </head>
 
@@ -33,24 +39,26 @@
 
         <form>
             <p>
-                <label>Pet ID Number</label>
+                <label>Pet ID Number *</label>
                 <input type="text" placeholder="please enter the 6 digits ID" required>            
             </p>
 
             <p>
-                <label>Your Name</label>
+                <label>Your Name *</label>
                 <input type="text" placeholder="First Name and Last Name" required>
             </p>
 
             <p>
-                <label>Phone number</label>
+                <label>Phone number *</label>
                 <input type="tel" required>
             </p>
 
             <p>
-                <label>Email</label>
+                <label>Email *</label>
                 <input type="email" required>
             </p>
+
+            <p style="font-style: italic; font-size: 8pt;"> All section with * indicates required.</p>
 
             <button type="submit">Submit</button>
         </form>
